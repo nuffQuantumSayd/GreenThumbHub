@@ -16,24 +16,49 @@ header {
 	margin-left: 4.1875rem;
 	margin-right: 4.1875rem;
 	display: flex;
-
-}
-
-header > img {
-	height: 3.0625rem;
-	width: 2.5rem;
-	margin-right: 0.4375rem;
+	justify-content: space-between;
+	text-align: center;
 }
 
 .nav-brand {
 	display: flex;
+}
+.nav-brand p {
+	font-size: 1.75rem;
+	font-weight: 900;
+	margin-bottom: 0;
+	margin-top: 1.625rem;
+	padding-left: 0.4375rem;
 }
 
 .nav-menu-one{
 	display: flex;
 }
 
-.nav-menu-one > h3 {
-	margin-right: 4.3125rem;
+.nav-menu-one  p {
+	margin-top: 0.5625rem;
+	margin-bottom: 0.5625rem;
+	margin-right: 2.1875rem;
+	margin-left: 2.1875rem;
+	line-height: 3rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.nav-menu-one p:hover {
+	cursor: pointer;
+}
+
+.nav-menu-two {
+	display: flex;
+}
+
+.nav-menu-two > a {
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+.nav-menu-two-shift-left{
+	padding-left: 4rem;
 }
 
