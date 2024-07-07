@@ -1,25 +1,29 @@
 import plantIcon from "/images/plant-icon-resize.png";
+import search from "/images/icons/search-interface-symbol.png"
+import bag from "/images/icons/bag.png"
+import menuButton from "/images/icons/menu-button.png"
 
 const Header = () => {
 	const brand = "Planto.";
+    
+
 
 	return (
 		<header>
 			<div className="nav-brand">
 				<img src={plantIcon} />
-				<h2>{brand}</h2>
+				<p>{brand}</p>
 			</div>
             <div className="nav-menu-one">
-                <h3>Home</h3>
-                <h3>Plant Type</h3>
-                <h3>More</h3>
-                <h3>Contact</h3>
+                <p>Home</p>
+                <p>Plant Type</p>
+                <p>More</p>
+                <p>Contact</p>
             </div>
             <div className="nav-menu-two">
-                <h3>Home</h3>
-                <h3>Plant Type</h3>
-                <h3>More</h3>
-                <h3>Contact</h3>
+                <a href="#"><img src={search}/></a>
+                <a className="nav-menu-two-shift-left" href="#"><img src={bag}/></a>
+                <a className="nav-menu-two-shift-left" href="#"><img src={menuButton}/></a>
             </div>
 		</header>
 	);
