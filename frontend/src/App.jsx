@@ -1,3 +1,4 @@
+import Header from "./components/header"
 
 function App() {
   
@@ -5,7 +6,8 @@ function App() {
   return (
     <>
       <div>
-        hello world
+        <Header/>
+        <p>hello world</p>
       </div>
     </>
   )
