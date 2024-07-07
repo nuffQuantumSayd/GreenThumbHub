@@ -1,0 +1,9 @@
+body {
+	background-image: url("/images/main-background-tree.png");
+	background-size: cover; 
+	height: 100vh; 
+	width: 100vw; 
+    background-repeat: no-repeat;
+    background-color: #171F12;
+}
+
