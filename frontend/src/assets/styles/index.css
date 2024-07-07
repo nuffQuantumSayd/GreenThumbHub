@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 body {
 	background-image: url("/images/main-background-tree.png");
 	background-size: cover; 
@@ -5,5 +7,33 @@ body {
 	width: 100vw; 
     background-repeat: no-repeat;
     background-color: #171F12;
+	font-family: "Inter", sans-serif;
+	color: #ffffff;
+}
+
+header {
+	margin-top: 3.625rem;
+	margin-left: 4.1875rem;
+	margin-right: 4.1875rem;
+	display: flex;
+
+}
+
+header > img {
+	height: 3.0625rem;
+	width: 2.5rem;
+	margin-right: 0.4375rem;
+}
+
+.nav-brand {
+	display: flex;
+}
+
+.nav-menu-one{
+	display: flex;
+}
+
+.nav-menu-one > h3 {
+	margin-right: 4.3125rem;
 }
 
