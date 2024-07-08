@@ -12,7 +12,6 @@ body {
 }
 
 /***** Header and Nav menu *****/
-
 header {
 	margin-top: 3.625rem;
 	margin-left: 4.1875rem;
@@ -67,6 +66,7 @@ header {
 /***** Main Content Top *****/
 .content-top-container {
 	display: flex;
+	justify-content: space-between;
 }
 
 .content-top-container-demo-group {
@@ -84,6 +84,7 @@ header {
 
 .content-top-container-demo-group-buttons {
 	display: flex;
+	margin-bottom: 13.563rem;
 }
 
 .content-top-container-demo-group-buttons img {
@@ -102,7 +103,13 @@ header {
 	margin-bottom: 1.25rem;
 }
 
+.content-top-container-card {
+	margin-top: 12.688rem;
+	margin-right: 4.188rem;
+}
+
 /***** Small Component Styling *****/
+/*** Button ***/
 .common-button {
 	color: inherit;
 	background: none;
@@ -118,4 +125,77 @@ header {
 
 .common-button:hover{
 	cursor: pointer;
+}
+
+/*** Small Rating Card ***/
+.small-rating-card {
+	border: rgba(255, 255, 255, 0.915) solid 1px;
+	border-radius: 2.625rem;
+	width: 25.563rem;
+	height: 14.813rem;
+	background-color: rgba(255, 255, 255, .05);
+	backdrop-filter: blur(8px);
+}
+
+.small-rating-card-title {
+	padding-left: 7rem !important;
+	padding-top: 3.313rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 0px;
+}
+
+.small-rating-card span {
+	padding-left: 7rem;
+}
+
+.small-rating-card p {
+	padding-left: 2.125rem;
+}
+
+/*** Small Plant Card ***/
+.small-plant-card {
+	border: rgba(255, 255, 255, 0.915) solid 1px;
+	border-radius: 5.25rem;
+	width: 32rem;
+	height: 40.25rem;
+	background-color: rgba(255, 255, 255, .05);
+	backdrop-filter: blur(8px);
+	position: relative;
+}
+
+.small-plant-card > img {
+	width: 28.688rem;
+	margin-left: 1.625rem;
+	margin-right: 1.625rem;
+	position: absolute;
+	bottom: 15.625rem;
+}
+
+.small-plant-card-info-group {
+	position: absolute;
+	bottom: 5rem;
+	left: 4.688rem;
+}
+
+.small-plant-card-title {
+	font-size: 2.375rem;
+	font-weight: 400;
+}
+
+.small-plant-card-description {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.small-plant-card-price {
+	font-size: 2.375rem;
+	margin-top: 0.438rem;
+	margin-bottom: 0px;
+	margin-right: 3.125rem;
+}
+
+.small-plant-card-button-group {
+	display: flex;
+	text-align: center;
 }
