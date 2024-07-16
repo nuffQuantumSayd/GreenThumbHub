@@ -1,6 +1,7 @@
 import app from "./server.js";
 import mongodb from 'mongodb'
 import dotenv from 'dotenv'
+import PlantsDAO from "./dao/PlantsDAO.js";
 
 async function main() {
     dotenv.config()
@@ -14,6 +15,7 @@ async function main() {
     try {
         //connect to MongoDb cluster
         await client.connect()
+        await PlantsDAO.injectDB(client)
 
         app.listen(port, () => {
             console.log(`server is running on port:${port}`)
