@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import plants from './api/plants.route.js'
+import ratings from './api/smallRatings.route.js'
 
 const app = express()
 
@@ -9,6 +10,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use('/api/v1/plants', plants)
+app.use('/api/v1/ratings', ratings)
 
 //error handling
 app.use('*', (req, res) => {
