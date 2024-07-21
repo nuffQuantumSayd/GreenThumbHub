@@ -108,6 +108,38 @@ header {
 	margin-right: 4.188rem;
 }
 
+/***** Main Content Cards *****/
+#card-intro {
+	margin-top: 6.25rem;
+	margin-bottom: 9.406rem;
+	text-align: center;
+	font-size: 3.438rem;
+	font-weight: 600;
+	color: #fff;
+}
+
+#medium-card-1 {
+	margin-bottom: 8.625rem;
+	margin-left: 4.625rem;
+	margin-right: 4.625rem;
+}
+
+#medium-card-2 {
+	margin-bottom: 13.375rem;
+	margin-left: 4.625rem;
+	margin-right: 4.625rem;
+}
+
+.small-plant-card-grid {
+	margin-top: 11.5rem;
+}
+
+.small-plant-card-grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 1.188rem;
+}
+
 /***** Small Component Styling *****/
 /*** Button ***/
 .common-button {
@@ -198,4 +230,34 @@ header {
 .small-plant-card-button-group {
 	display: flex;
 	text-align: center;
+}
+
+/*** Medium Plant Card ***/
+.medium-plant-card {
+	border: rgba(255, 255, 255, 0.915) solid 1px;
+	border-radius: 9.438rem;
+	height: 32.875rem;
+	max-width: 100.563rem;
+	min-width: 10rem;
+	background-color: rgba(255, 255, 255, .05);
+	backdrop-filter: blur(8px);
+	position: relative;
+}
+
+.medium-plant-card img {
+	position: absolute;
+	bottom: -5rem;
+	width: 37.563rem;
+}
+
+.medium-plant-card-info-group {
+	position: absolute;
+	bottom: 8rem;
+	right: 9.5rem;
+	max-width: 38.813rem;
+}
+
+.medium-plant-card-title {
+	font-weight: 600;
+	font-size: 2.375rem;
 }
