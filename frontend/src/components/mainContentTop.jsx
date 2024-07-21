@@ -2,10 +2,11 @@ import CommonButton from "../smallComponents/button";
 import SmallPlantCard from "../smallComponents/smallPlantCard";
 import SmallRatingCard from "../smallComponents/smallRatingCard";
 import playButton from "/images/icons/play-button.png";
-import calathea from "/images/calathea-plant.png"
+import plants from "../plantList.js";
 
 const MainContentTop = () => {
 	const buttonTitle = "Explore";
+	const plantOne = plants.at(0)
 
 	return (
 		<div className="content-top-container">
@@ -30,10 +31,10 @@ const MainContentTop = () => {
 				 elit, sed do eiusmod tempor incididunt..."/>
 			</div>
 			<div className="content-top-container-card">
-				<SmallPlantCard img={calathea}
+				<SmallPlantCard img={plantOne.image}
 				title="Trendy House Plant"
-				description="Calathea Plant"
-				price={29.99}/>
+				description={plantOne.title}
+				price={plantOne.price}/>
 			</div>
 		</div>
 	);
