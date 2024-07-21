@@ -135,9 +135,15 @@ header {
 }
 
 .small-plant-card-grid-container {
-	display: grid;
-	grid-template-columns: auto auto auto;
+	display: flex;
+	flex-wrap: wrap;
+	/* grid-template-columns: auto auto auto;
+	column-gap: 1.188rem; */
+	margin-left: 4.625rem;
+	margin-right: 4.625rem;
+	row-gap: 9.938rem;
 	column-gap: 1.188rem;
+	justify-content: center;
 }
 
 /***** Small Component Styling *****/
@@ -189,7 +195,7 @@ header {
 .small-plant-card {
 	border: rgba(255, 255, 255, 0.915) solid 1px;
 	border-radius: 5.25rem;
-	width: 32rem;
+	min-width: 32rem;
 	height: 40.25rem;
 	background-color: rgba(255, 255, 255, .05);
 	backdrop-filter: blur(8px);
@@ -261,3 +267,16 @@ header {
 	font-weight: 600;
 	font-size: 2.375rem;
 }
+
+/*** Additional Features ***/
+.truncate {
+	display: -webkit-box; /* Use a flexbox-based layout */
+	-webkit-box-orient: vertical; /* Set the orientation to vertical */
+	overflow: hidden; /* Hide any overflowing text */
+	text-overflow: ellipsis; /* Display an ellipsis (...) at the end */
+	-webkit-line-clamp: 2; /* Limit the text to 2 lines */
+	line-height: 1.5em; /* Adjust the line height as needed */
+	max-height: 3em; /* Ensure the max height matches the line height times the number of lines */
+	width: 24rem;
+}
+  
