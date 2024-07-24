@@ -132,6 +132,7 @@ header {
 
 .small-plant-card-grid {
 	margin-top: 11.5rem;
+	margin-bottom: 9.25rem;
 }
 
 .small-plant-card-grid-container {
@@ -145,6 +146,23 @@ header {
 	column-gap: 1.188rem;
 	justify-content: center;
 }
+
+.customer-reviews-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	row-gap: 1.313rem;
+	column-gap: 1.313rem;
+	margin-bottom: 11rem;
+}
+
+.large-plant-card-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 11rem;
+}
+
+
 
 /***** Small Component Styling *****/
 /*** Button ***/
@@ -266,6 +284,71 @@ header {
 .medium-plant-card-title {
 	font-weight: 600;
 	font-size: 2.375rem;
+}
+
+/***Medium Rating Card***/
+.medium-rating-card {
+	border: rgba(255, 255, 255, 0.915) solid 1px;
+	border-radius: 5.25rem;
+	background-color: rgba(255, 255, 255, .05);
+	width: 32rem;
+	height: 25.875rem;
+	position: relative;
+}
+
+.medium-rating-card-image-group {
+	display: flex;
+	position: absolute;
+	left: 3rem;
+	top: 6.313rem;
+}
+
+.medium-rating-card-name-group {
+	margin-left: 1.1875rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.medium-rating-card-name-group p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.medium-rating-card-description {
+	position: absolute;
+	top: 13.313rem;
+	left: 3rem;
+	width: 26rem;
+	font-size: 1.313rem;
+	font-weight: 400;
+}
+
+/*** Large Plant Card ***/
+.large-plant-card {
+	max-width: 100rem;
+	min-height: 47.188rem;
+	border-radius: 7.063rem;
+	border: rgba(255, 255, 255, 0.915) solid 1px;
+	background-color: rgba(255, 255, 255, .05);
+	position: relative;
+}
+
+.large-plant-card img {
+	width: 64.75rem;
+	position: absolute;
+	left: -11rem;
+	bottom: -12.813rem;
+}
+
+.large-plant-card-description-group {
+	position: absolute;
+	right: 9.188rem;
+	top: 9.188rem;
+}
+
+.large-plant-card-description-group > p {
+	font-size: 1.75rem;
+	font-weight: 600;
 }
 
 /*** Additional Features ***/
