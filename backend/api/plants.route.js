@@ -5,5 +5,6 @@ const router = express.Router()
 
 // router.route('/').get((req,res) => res.send('hello world'))
 router.route('/').get(PlantsController.apiGetPlants)
+router.route('/:id').get(PlantsController.apiGetPlantById)
 
 export default router
