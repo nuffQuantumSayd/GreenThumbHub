@@ -1,4 +1,5 @@
 import MainContentCards from "./mainContentCards"
+import MainContentReviews from "./mainContentReviews"
 import MainContentTop from "./mainContentTop"
 
 const MainContent = () => {
@@ -6,6 +7,7 @@ const MainContent = () => {
         <>
             <MainContentTop/>
             <MainContentCards/>
+            <MainContentReviews/>
         </>
     )
 }
