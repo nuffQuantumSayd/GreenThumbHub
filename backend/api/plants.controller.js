@@ -52,4 +52,21 @@ export default class PlantsController {
 			res.status(500).send({error: e})
 		}
 	}
+
+	static async apiUpdatePlant(req, res, next) {
+		try {
+			const {id} = req.params
+			const image = req.body.image
+			const name = req.body.name
+			const desc = req.body.description
+			const price = req.body.price
+
+			const updatePlant = await PlantsDAO.updatePlant(id,image,name,desc,price)
+			console.log(updatePlant)
+			res.json({status: "success"})
+		} catch (e) {
+			console.log(e)
+			res.status(500).send({error: e})
+		}
+	}
 }
