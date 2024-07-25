@@ -24,5 +24,6 @@ Welcome to our Plant Ecommerce Website (Green Thumb Hub) built with the MERN sta
   
 - **Node.js:** JavaScript runtime environment for server-side scripting and backend operations.
 
+[Check it out](https://greenthumbhub.onrender.com/)
 
 
