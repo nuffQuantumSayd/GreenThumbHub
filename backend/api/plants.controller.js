@@ -41,4 +41,15 @@ export default class PlantsController {
 		}
 	}
 
+	static async apiDeletePlant(req, res, next) {
+		try {
+			let {id} = req.params
+			const plantToDelete = await PlantsDAO.deletePlant(id)
+			res.json({status:"success"})
+
+		} catch (e) {
+			console.log(e)
+			res.status(500).send({error: e})
+		}
+	}
 }
