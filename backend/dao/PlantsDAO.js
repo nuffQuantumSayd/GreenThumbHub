@@ -54,4 +54,14 @@ export default class PlantsDAO {
             throw e
         }
     }
+
+    static async deletePlant(id) {
+        try {
+            const plantToDelete = await plants.deleteOne({_id: new mongodb.ObjectId(id)})
+            return plantToDelete
+        } catch (e) {
+            console.log(`unable to delete plant:${e}`)
+            throw e
+        }
+    }
 }
