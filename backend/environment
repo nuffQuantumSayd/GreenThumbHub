@@ -1,0 +1,5 @@
+PLANTINFO_DB_URI=Your_Mongo_Connection_String
+
+PLANTDB_NS=Plant_Collection_Name
+
+PORT=5000
