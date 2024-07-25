@@ -16,4 +16,6 @@ router.route('/').post(PlantsController.apiCreatePlant)
 //delete plant by id
 router.route('/:id').delete(PlantsController.apiDeletePlant)
 
+//update plant by id
+router.route('/:id').put(PlantsController.apiUpdatePlant)
 export default router
