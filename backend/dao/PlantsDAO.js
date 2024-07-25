@@ -37,4 +37,21 @@ export default class PlantsDAO {
             throw e
         }
     }
+
+    static async createPlant(image, name, description, price) {
+        try {
+            const plant = {
+                image: image,
+                name: name,
+                description: description,
+                price: price
+            }
+
+            return await plants.insertOne(plant)
+            console.log('plant added')
+        } catch (e) {
+            console.log(`unable to create plant: ${e}`)
+            throw e
+        }
+    }
 }
