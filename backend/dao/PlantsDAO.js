@@ -64,4 +64,16 @@ export default class PlantsDAO {
             throw e
         }
     }
+
+    static async updatePlant(id, img, nme, desc, prce) {
+        try {
+            const update = await plants.updateOne({_id: new mongodb.ObjectId(id)}, 
+                {$set: {image: img, name: nme, description: desc, price: prce}})
+            
+            return update
+        } catch (e) {
+            console.log(`unable to update plant:${e}`)
+            throw e
+        }
+    }
 }
