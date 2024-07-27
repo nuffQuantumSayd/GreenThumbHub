@@ -25,7 +25,7 @@ const MainContentReviews = () => {
 			</div>
 			<p id="card-intro">Our Best o2</p>
 			<div className="large-plant-card-container">
-				<LargePlantCard 
+				<LargePlantCard key={largePlantReview._id}
           image={largePlantReview.image}
           description={largePlantReview.description}
         />
