@@ -34,6 +34,11 @@ header {
 
 .nav-menu-one{
 	display: flex;
+	display: none;
+	float: right;
+	text-align: right;
+	margin-right: 4.1875rem;
+	margin-bottom: 4rem;
 }
 
 .nav-menu-one  p {
