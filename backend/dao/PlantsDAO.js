@@ -48,7 +48,6 @@ export default class PlantsDAO {
             }
 
             return await plants.insertOne(plant)
-            console.log('plant added')
         } catch (e) {
             console.log(`unable to create plant: ${e}`)
             throw e
