@@ -160,6 +160,8 @@ header {
 	display: flex;
 	flex-direction: column;
 	margin-top: 11rem;
+	margin-left: 4.625rem;
+	margin-right: 4.625rem;
 }
 
 
