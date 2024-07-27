@@ -17,6 +17,7 @@ const Header = () => {
 
 
 	return (
+        <>
 		<header>
 			<div className="nav-brand">
 				<img src={plantIcon} />
@@ -27,13 +28,15 @@ const Header = () => {
                 <a className="nav-menu-two-shift-left" href="#"><img src={bag}/></a>
                 <a id="menu-button" className="nav-menu-two-shift-left" href="#" onClick={headerHandler}><img src={menuButton}/></a>
             </div>
-            <div className="nav-menu-one">
+            
+		</header>
+        <div className="nav-menu-one">
                 <p>Home</p>
                 <p>Plant Type</p>
                 <p>More</p>
                 <p>Contact</p>
             </div>
-		</header>
+        </>
 	);
 };
 
