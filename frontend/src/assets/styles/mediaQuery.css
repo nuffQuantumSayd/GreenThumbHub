@@ -1,0 +1,25 @@
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    header {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    header .nav-menu-one {
+        display: none;
+    }
+
+    header a {
+        display: block;
+    }
+
+    header #menu-button {
+        display: block;
+    }
+
+    .content-top-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+  }
